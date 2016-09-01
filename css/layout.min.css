@@ -1,0 +1,2 @@
+@charset "UTF-8";.easy-grid,.easy-grid-body,.easy-grid-col,.easy-grid-header,.easy-grid-row{box-sizing:border-box}.easy-grid{font-size:16px}.easy-grid-body{max-height:360px;overflow-x:hidden;overflow-y:auto}.easy-grid-body>.easy-grid-row{height:36px}.easy-grid-body>.easy-grid-row:hover{background:rgba(0,128,0,.3)}.easy-grid-row{font-size:0}.easy-grid-col{display:inline-block;height:100%;line-height:36px;font-size:16px;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/*# sourceMappingURL=layout.min.css.map */

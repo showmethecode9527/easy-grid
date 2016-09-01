@@ -1,0 +1,48 @@
+/* EasyGrid 布局, 只包含基本样式 */
+$grid-font-size: 16px;
+$grid-row-height: 36px;
+$max-row-cnt: 10;
+
+.easy-grid {
+    font-size: $grid-font-size;
+    box-sizing: border-box;
+    
+    @at-root .easy-grid-header {
+        box-sizing: border-box;
+    }
+
+    @at-root .easy-grid-body {
+        box-sizing: border-box;
+        max-height: $grid-row-height * $max-row-cnt;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        & > .easy-grid-row {
+            height: $grid-row-height;
+
+            &:hover {
+                background: rgba(0, 128, 0, .3);
+            }
+        }
+    }
+
+    @at-root .easy-grid-row {
+        box-sizing: border-box;
+        font-size: 0;
+
+        @at-root .easy-grid-col {
+            box-sizing: border-box;
+            display: inline-block;
+
+            height: 100%;
+            line-height: $grid-row-height;
+
+            font-size: $grid-font-size;
+            text-align: center;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

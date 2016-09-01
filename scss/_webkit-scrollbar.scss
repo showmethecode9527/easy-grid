@@ -1,0 +1,36 @@
+$webkit-bar-width: 6px;
+$webkit-bar-bg: rgba(0, 0, 0, 0);
+/* 滚动条滑轨背景色 */
+$webkit-track-bg: rgba(0, 0, 0, .1);
+/* 滑块圆角 */
+$webkit-thumb-border-radius: 3px;
+/* 滑块背景(不支持rgba) */
+$webkit-thumb-bg-ie: #0E720E;
+/* 滑块背景 */
+$webkit-thumb-bg: rgba(14, 114, 14, .75);
+/* hover状态下, 滑块背景(不支持rgba) */
+$webkit-thumb-bg-ie-hover: #2D832D;
+/* hover状态下, 滑块背景 */
+$webkit-thumb-bg-hover: rgba(14, 114, 14, .85);
+
+::-webkit-scrollbar {
+    width: $webkit-bar-width;
+    /* height: 10px; */
+    background-color: $webkit-bar-bg;
+}
+/* 轨道 */
+::-webkit-scrollbar-track {
+    background-color: $webkit-track-bg;
+}
+/* 滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: $webkit-thumb-border-radius;
+    background-color: $webkit-thumb-bg-ie;
+    background-color: $webkit-thumb-bg;
+    transition: all 0.4s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: $webkit-thumb-bg-ie-hover;
+    background-color: $webkit-thumb-bg-hover;
+    transition: all 0.4s ease;
+}

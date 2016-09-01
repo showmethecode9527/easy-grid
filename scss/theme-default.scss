@@ -1,0 +1,20 @@
+/* EasyGrid 主题文件 */
+input {
+    outline: none;
+}
+.easy-grid {
+    border: 1px solid #b8ac81;
+
+    @at-root .easy-grid-header {
+        background: #dcd7c6;
+    }
+
+    @at-root .easy-grid-body {
+        & > .easy-grid-row {
+
+            & + .easy-grid-row {
+                border-top: 1px solid #d8d8d8;
+            }
+        }
+    }
+}
